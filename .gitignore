@@ -5,3 +5,32 @@ compiled/
 *.bak
 \#*
 .\#*
+
+# Node.js зависимости
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Файлы окружения
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Сборка
+build/
+dist/
+
+# Логи и временные файлы
+*.log
+*.cache
+*.pid
+*.seed
+*.lock
+.DS_Store
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.iml
