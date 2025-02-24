@@ -1,13 +1,9 @@
 function TodoItem({ todo, toggleTodo, removeTodo }) {
     return (
-      <li>
-        <span
-          style={{ textDecoration: todo.completed ? "line-through" : "none", cursor: "pointer" }}
-          onClick={() => toggleTodo(todo.id)}
-        >
-          {todo.text}
-        </span>
-        <button onClick={() => removeTodo(todo.id)}>❌</button>
+      <li className={todo.completed ? "completed" : ""}>
+        <input type="checkbox" checked={todo.completed} onChange={() => toggleTodo(todo.id)} />
+        <span onClick={() => toggleTodo(todo.id)}>{todo.text}</span>
+        <button className="delete-btn" onClick={() => removeTodo(todo.id)}>❌</button>
       </li>
     );
   }
