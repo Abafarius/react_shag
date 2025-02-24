@@ -1,0 +1,28 @@
+.App-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.switchBTN, .counterBTN {
+  padding: 10px 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.switchBTN {
+  background-color: #007bff;
+  color: white;
+}
+
+.counterBTN {
+  background-color: #28a745;
+  color: white;
+}
+
+.clock {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #333;
+}
